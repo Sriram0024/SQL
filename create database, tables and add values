@@ -1,0 +1,20 @@
+CREATE DATABASE logic2;
+USE logic2;
+
+CREATE TABLE worker(
+    emp_id INT PRIMARY KEY,
+    ename VARCHAR(30),
+    job_desc VARCHAR(30),
+    salary INT
+);
+
+INSERT INTO worker VALUES
+(1,'hari','manager',2500000),
+(2,'sarvesh','manager',3500000),
+(3,'aravind','data analyst',200000),
+(4,'sriram','software engineer',2500000),
+(5,'santhosh','sales executive',2900000);
+
+-- Corrected SELECT query
+SELECT * FROM worker WHERE salary > 200000;
+
